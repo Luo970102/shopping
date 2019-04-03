@@ -17,9 +17,9 @@
 .section1 .sofa{
     position: absolute;
     left:50%;
-    margin-left: -150px;
+    margin-left: -1.5rem;
     bottom: 0;
-    margin-bottom: 330px;
+    margin-bottom: 3.3rem;
     animation: shake 1s alternate infinite;
 }
 
@@ -27,9 +27,9 @@
 
     position: absolute;
     left:50%;
-    margin-left: 100px;
+    margin-left: 1rem;
     bottom: 0;
-    margin-bottom: 430px;
+    margin-bottom: 4.3rem;
     animation: shake 1.3s alternate infinite;
 }
 
@@ -37,9 +37,9 @@
 
     position: absolute;
     left:50%;
-    margin-left: -380px;
+    margin-left: -3.8rem;
     bottom: 0;
-    margin-bottom: 150px;
+    margin-bottom: 1.5rem;
 }
 
 
@@ -47,7 +47,7 @@
 
     from{}
     to{
-        transform: translateY(-80px);
+        transform: translateY(-0.8rem);
     }
 }
 
@@ -62,12 +62,12 @@
 
     position: absolute;
     left:50%;
-    /* margin-left: -111px; */
+    /* margin-left: -1.11rem; */
     bottom: 0;
-    margin-bottom: 300px;
+    margin-bottom: 3rem;
 
     /* 到时候用动画效果移动到-111来 */
-    margin-left: 400px;
+    margin-left: 4rem;
 }
 
 
@@ -75,9 +75,9 @@
 
     position: absolute;
     left:50%;
-    margin-left: -111px;
+    margin-left: -1.11rem;
     bottom: 0;
-    margin-bottom: 300px;
+    margin-bottom: 3rem;
     display: none;
 }
 
@@ -86,10 +86,10 @@
     position: absolute;
     /* right定位，那么就只能用margin-right，left用margin-left */
     right: 50%;
-    margin-right: -222.5px;
+    margin-right: -2.225rem;
 
     bottom: 0;
-    margin-bottom: 213px;
+    margin-bottom: 2.13rem;
     width:0;
 }
 
@@ -104,34 +104,34 @@
 .section3 .sofa{
     position: absolute;
     left:50%;
-    margin-left: -235px;
+    margin-left: -2.35rem;
     top:50%;
-    margin-top: -120px;
+    margin-top: -1.2rem;
 }
 
 .section3 .color{
 
-    width: 296px;
-    height: 131px;
+    width: 2.96rem;
+    height: 1.31rem;
     background: url(../images/03/color01.gif) no-repeat;
 
     position: absolute;
     left:50%;
     top:50%;
-    margin-left: 40px;
-    margin-top: -20px;
+    margin-left: 0.4rem;
+    margin-top: -0.2rem;
 }
 
 .section3 .add{
-    width: 218px;
-    height: 58px;
+    width: 2.18rem;
+    height: 0.58rem;
     background: url(../images/03/add01.gif) no-repeat;
 
     position: absolute;
     left:50%;
     top:50%;
-    margin-left: 40px;
-    margin-top: 110px;
+    margin-left: 0.4rem;
+    margin-top: 1.1rem;
 }
 
 
@@ -163,11 +163,11 @@
 
 .section4 .keyboard{
 
-    width: 283px;
-    height: 270px;
+    width: 2.83rem;
+    height: 2.7rem;
     background: url(../images/04/keyboard.png) no-repeat;
     position: relative;
-    margin-top:50px;
+    margin-top:0.5rem;
 
     opacity: 0;
 }
@@ -176,33 +176,33 @@
 
     position: absolute;
     left:50%;
-    margin-left:-86.5px;
-    top:60px;
+    margin-left:-0.865rem;
+    top:0.6rem;
 }
 
 .section4 .cloud{
     position: absolute;
-    top:10px;
-    right:-882px;
+    top:0.1rem;
+    right:-8.82rem;
 
     animation: cloud 60s linear infinite;
 }
 
 .section4 .carBox{
-    width: 407px;
-    height: 346px;
-    /* border: 1px solid #000; */
+    width: 4.07rem;
+    height: 3.46rem;
+    /* border: 0.01rem solid #000; */
     position: absolute;
 
     left:50%;
-    margin-left: -203.5px;
-    bottom: 40px;
+    margin-left: -2.035rem;
+    bottom: 0.4rem;
 }
 
 .section4 .sofa{
 
-    left:120px;
-    top:-40px;
+    left:1.2rem;
+    top:-0.4rem;
     position: absolute;
 }
 
@@ -215,7 +215,7 @@
     from{}
     to{
 
-        transform: translateX(-2000px);
+        transform: translateX(-20rem);
     }
 }
 
@@ -223,25 +223,25 @@
 /* 第五屏 */
 .section5{
     background: url(../images/05/bg.png) repeat;
-    perspective: 1100px;
+    perspective: 11rem;
 }
 
 
 .section5 .card-box{
 
-    width: 358px;
-    height: 221px;
+    width: 3.58rem;
+    height: 2.21rem;
     position: absolute;
     left:50%;
-    margin-left: -430px;
+    margin-left: -4.3rem;
     top:50%;
-    margin-top: -80px;
+    margin-top: -0.8rem;
 }
 
 .section5 .bill{
 
     position: absolute;
-    left:130px;
+    left:1.3rem;
     top:0;
 }
 
@@ -251,14 +251,14 @@
 
 
 .section5 .mouse{
-    width: 205px;
-    height: 400px;
+    width: 2.05rem;
+    height: 4rem;
     background: url(../images/05/mouse01.png) no-repeat left bottom;
     position: absolute;
     left:50%;
     top:50%;
-    margin-left: 300px;
-    margin-top: -350px;
+    margin-left: 3rem;
+    margin-top: -3.5rem;
 }
 
 .section5 .hand{
@@ -266,17 +266,17 @@
     position: absolute;
     left:50%;
     top:50%;
-    margin-left: 270px;
-    margin-top: -50px;
+    margin-left: 2.7rem;
+    margin-top: -0.5rem;
 }
 
 
 .section5 .words{
     position: absolute;
     left:50%;
-    margin-left: -270.5px;
+    margin-left: -2.705rem;
     top:50%;
-    margin-top: -270px;
+    margin-top: -2.7rem;
     /* display: none; */
     /* display:none是没有动画效果的！ */
     opacity: 0;
@@ -286,7 +286,7 @@
 .section5.animation .hand{
 
     transition: all 1s;
-    transform: translateY(-30px);
+    transform: translateY(-0.3rem);
 }
 
 .section5.animation .mouse{
@@ -301,7 +301,7 @@
 .section5.animation .bill{
 
     transition: all 1s 2s;
-    transform: translateY(-130px);
+    transform: translateY(-1.3rem);
 }
 
 
@@ -317,7 +317,7 @@
 .section6 .street{
     width: 100%;
     height: 100%;
-    background: url(../images/06/bg.png) repeat-x -300px bottom;
+    background: url(../images/06/bg.png) repeat-x -3rem bottom;
 
     position: relative;
 }
@@ -325,16 +325,16 @@
 .section6 .big-box{
 
     /* 它的子元素都会定位，如果不给这个盒子宽高，就没有宽高，就容易导致布局有问题 */
-    width: 221px;
-    height: 122px;
+    width: 2.21rem;
+    height: 1.22rem;
 
     position: absolute;
 
     bottom: 0;
-    margin-bottom:80px;
+    margin-bottom:0.8rem;
     /* left:0;
-    margin-left:400px; */
-    left:400px;
+    margin-left:4rem; */
+    left:4rem;
 }
 
 .section6 .car{
@@ -344,19 +344,19 @@
 
 .section6 .gift{
 
-    width: 123px;
-    height: 85px;
+    width: 1.23rem;
+    height: 0.85rem;
     position: absolute;
 
-    top:-400px;
+    top:-4rem;
 }
 
 
 .section6 .sofa{
     position: absolute;
-    width: 80px;
-    left:20px;
-    top:-20px;
+    width: 0.8rem;
+    left:0.2rem;
+    top:-0.2rem;
 }
 
 .section6 .box{
@@ -368,15 +368,15 @@
     position: absolute;
     height: 0px;
     right:0;
-    bottom:9px;
+    bottom:0.09rem;
 }
 
 
 .section6 .door{
     position: absolute;
     bottom: 0;
-    margin-bottom:116px;
-    left:810px;
+    margin-bottom:1.16rem;
+    left:8.1rem;
 
     display: none;
 }
@@ -385,9 +385,9 @@
 .section6 .girl{
     position: absolute;
     bottom: 0;
-    margin-bottom:116px;
-    left:865px;
-    height: 120px;
+    margin-bottom:1.16rem;
+    left:8.65rem;
+    height: 1.2rem;
     display: none;
 }
 
@@ -399,16 +399,16 @@
 }
 
 .section7 .star{
-    /* width: 105px; */
+    /* width: 1.05rem; */
     width: 0;
-    height: 17px;
+    height: 0.17rem;
     background: url(../images/07/stars3.png);
 
     position: absolute;
     left:50%;
-    margin-left: -300px;
+    margin-left: -3rem;
     bottom: 0;
-    margin-bottom:442px;
+    margin-bottom:4.42rem;
 }
 
 
@@ -416,9 +416,9 @@
 
     position: absolute;
     left:50%;
-    margin-left: -280px;
+    margin-left: -2.8rem;
     bottom: 0;
-    margin-bottom:382px;
+    margin-bottom:3.82rem;
 
     opacity: 0;
 }
@@ -427,7 +427,7 @@
 .section7.animation .star{
 
     transition: all 1s steps(5);
-    width: 105px;
+    width: 1.05rem;
 }
 
 .section7.animation .good{
@@ -443,15 +443,15 @@
 }
 
 .section8 .begin{
-    width: 389px;
-    height: 160px;
+    width: 3.89rem;
+    height: 1.6rem;
 
     background: url(../images/08/begin.png);
 
     position: absolute;
     left:50%;
-    margin-left: -194.5px;
-    top:20px;
+    margin-left: -1.945rem;
+    top:0.2rem;
 }
 
 
@@ -462,8 +462,8 @@
 
 .section8 .again{
     position: absolute;
-    right:80px;
-    bottom: 80px;
+    right:0.8rem;
+    bottom: 0.8rem;
 }
 
 
