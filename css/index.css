@@ -1,0 +1,476 @@
+/* 
+
+    如果你的元素要参照背景图片来放它的位置，那么就应该背景图片怎么布局，你就怎么布局
+
+    意思是：如果背景图片水平居中，你也要保证水平居中
+           如果背景图片底部对齐，你也要保证底部对齐
+
+           这样才能保证不管屏幕大小怎么变化，你永远都在图片对应的某个位置上
+*/
+
+.section1{
+
+    background: url(../images/01/bg.png) no-repeat center bottom;
+}
+
+
+.section1 .sofa{
+    position: absolute;
+    left:50%;
+    margin-left: -150px;
+    bottom: 0;
+    margin-bottom: 330px;
+    animation: shake 1s alternate infinite;
+}
+
+.section1 .ball{
+
+    position: absolute;
+    left:50%;
+    margin-left: 100px;
+    bottom: 0;
+    margin-bottom: 430px;
+    animation: shake 1.3s alternate infinite;
+}
+
+.section1 .products{
+
+    position: absolute;
+    left:50%;
+    margin-left: -380px;
+    bottom: 0;
+    margin-bottom: 150px;
+}
+
+
+@keyframes shake{
+
+    from{}
+    to{
+        transform: translateY(-80px);
+    }
+}
+
+
+/* 第二屏 */
+.section2{
+
+    background: url(../images/02/bg.png) no-repeat center bottom;
+}
+
+.section2 .search01{
+
+    position: absolute;
+    left:50%;
+    /* margin-left: -111px; */
+    bottom: 0;
+    margin-bottom: 300px;
+
+    /* 到时候用动画效果移动到-111来 */
+    margin-left: 400px;
+}
+
+
+.section2 .search02{
+
+    position: absolute;
+    left:50%;
+    margin-left: -111px;
+    bottom: 0;
+    margin-bottom: 300px;
+    display: none;
+}
+
+
+.section2 .sofas{
+    position: absolute;
+    /* right定位，那么就只能用margin-right，left用margin-left */
+    right: 50%;
+    margin-right: -222.5px;
+
+    bottom: 0;
+    margin-bottom: 213px;
+    width:0;
+}
+
+
+
+/* 第三屏 */
+.section3{
+    background: url(../images/03/bg.png) no-repeat center;
+}
+
+
+.section3 .sofa{
+    position: absolute;
+    left:50%;
+    margin-left: -235px;
+    top:50%;
+    margin-top: -120px;
+}
+
+.section3 .color{
+
+    width: 296px;
+    height: 131px;
+    background: url(../images/03/color01.gif) no-repeat;
+
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left: 40px;
+    margin-top: -20px;
+}
+
+.section3 .add{
+    width: 218px;
+    height: 58px;
+    background: url(../images/03/add01.gif) no-repeat;
+
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left: 40px;
+    margin-top: 110px;
+}
+
+
+.section3.animation .color{
+
+    transition: all 1s;
+    background: url(../images/03/color02.gif) no-repeat;
+}
+
+.section3.animation .add{
+
+    transition: all 1s;
+    background: url(../images/03/add02.gif) no-repeat;
+}
+
+
+/* 第四屏 */
+.section4{
+    background: url(../images/04/bg.png) no-repeat center bottom;
+}
+
+.section4>div{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section4 .keyboard{
+
+    width: 283px;
+    height: 270px;
+    background: url(../images/04/keyboard.png) no-repeat;
+    position: relative;
+    margin-top:50px;
+
+    opacity: 0;
+}
+
+.section4 .address{
+
+    position: absolute;
+    left:50%;
+    margin-left:-86.5px;
+    top:60px;
+}
+
+.section4 .cloud{
+    position: absolute;
+    top:10px;
+    right:-882px;
+
+    animation: cloud 60s linear infinite;
+}
+
+.section4 .carBox{
+    width: 407px;
+    height: 346px;
+    /* border: 1px solid #000; */
+    position: absolute;
+
+    left:50%;
+    margin-left: -203.5px;
+    bottom: 40px;
+}
+
+.section4 .sofa{
+
+    left:120px;
+    top:-40px;
+    position: absolute;
+}
+
+.section4 .car{
+    position: absolute;
+}
+
+
+@keyframes cloud{
+    from{}
+    to{
+
+        transform: translateX(-2000px);
+    }
+}
+
+
+/* 第五屏 */
+.section5{
+    background: url(../images/05/bg.png) repeat;
+    perspective: 1100px;
+}
+
+
+.section5 .card-box{
+
+    width: 358px;
+    height: 221px;
+    position: absolute;
+    left:50%;
+    margin-left: -430px;
+    top:50%;
+    margin-top: -80px;
+}
+
+.section5 .bill{
+
+    position: absolute;
+    left:130px;
+    top:0;
+}
+
+.section5 .card{
+    position: absolute;
+}
+
+
+.section5 .mouse{
+    width: 205px;
+    height: 400px;
+    background: url(../images/05/mouse01.png) no-repeat left bottom;
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left: 300px;
+    margin-top: -350px;
+}
+
+.section5 .hand{
+
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left: 270px;
+    margin-top: -50px;
+}
+
+
+.section5 .words{
+    position: absolute;
+    left:50%;
+    margin-left: -270.5px;
+    top:50%;
+    margin-top: -270px;
+    /* display: none; */
+    /* display:none是没有动画效果的！ */
+    opacity: 0;
+}
+
+
+.section5.animation .hand{
+
+    transition: all 1s;
+    transform: translateY(-30px);
+}
+
+.section5.animation .mouse{
+
+    transition: all 1s 1s;
+    /* background: url(../images/05/mouse02.png) no-repeat left bottom; */
+    /* 上面和下面都可以改图片并保持原来的位置 */
+    background-image: url(../images/05/mouse02.png);
+}
+
+
+.section5.animation .bill{
+
+    transition: all 1s 2s;
+    transform: translateY(-130px);
+}
+
+
+.section5.animation .words{
+
+    transition: all 1s 3s;
+    opacity: 1;
+    transform: rotateY(360deg) scale(1.2);
+}
+
+
+/* 第六屏 */
+.section6 .street{
+    width: 100%;
+    height: 100%;
+    background: url(../images/06/bg.png) repeat-x -300px bottom;
+
+    position: relative;
+}
+
+.section6 .big-box{
+
+    /* 它的子元素都会定位，如果不给这个盒子宽高，就没有宽高，就容易导致布局有问题 */
+    width: 221px;
+    height: 122px;
+
+    position: absolute;
+
+    bottom: 0;
+    margin-bottom:80px;
+    /* left:0;
+    margin-left:400px; */
+    left:400px;
+}
+
+.section6 .car{
+    position: absolute;
+}
+
+
+.section6 .gift{
+
+    width: 123px;
+    height: 85px;
+    position: absolute;
+
+    top:-400px;
+}
+
+
+.section6 .sofa{
+    position: absolute;
+    width: 80px;
+    left:20px;
+    top:-20px;
+}
+
+.section6 .box{
+    position: absolute;
+}
+
+
+.section6 .man{
+    position: absolute;
+    height: 0px;
+    right:0;
+    bottom:9px;
+}
+
+
+.section6 .door{
+    position: absolute;
+    bottom: 0;
+    margin-bottom:116px;
+    left:810px;
+
+    display: none;
+}
+
+
+.section6 .girl{
+    position: absolute;
+    bottom: 0;
+    margin-bottom:116px;
+    left:865px;
+    height: 120px;
+    display: none;
+}
+
+
+
+/* 第七屏 */
+.section7{
+    background: url(../images/07/bg.png) no-repeat center bottom;
+}
+
+.section7 .star{
+    /* width: 105px; */
+    width: 0;
+    height: 17px;
+    background: url(../images/07/stars3.png);
+
+    position: absolute;
+    left:50%;
+    margin-left: -300px;
+    bottom: 0;
+    margin-bottom:442px;
+}
+
+
+.section7 .good{
+
+    position: absolute;
+    left:50%;
+    margin-left: -280px;
+    bottom: 0;
+    margin-bottom:382px;
+
+    opacity: 0;
+}
+
+
+.section7.animation .star{
+
+    transition: all 1s steps(5);
+    width: 105px;
+}
+
+.section7.animation .good{
+
+    transition: all 1s 1s;
+    opacity: 1;
+}
+
+
+/* 第八屏 */
+.section8{
+    background: url(../images/08/bg.png);
+}
+
+.section8 .begin{
+    width: 389px;
+    height: 160px;
+
+    background: url(../images/08/begin.png);
+
+    position: absolute;
+    left:50%;
+    margin-left: -194.5px;
+    top:20px;
+}
+
+
+.section8 .begin:hover{
+
+    background: url(../images/08/begin.gif);
+}
+
+.section8 .again{
+    position: absolute;
+    right:80px;
+    bottom: 80px;
+}
+
+
+.section8 .hand{
+
+    position: absolute;
+
+    /* 不要接收任何来自于鼠标指针的事件 */
+    pointer-events: none;
+}
